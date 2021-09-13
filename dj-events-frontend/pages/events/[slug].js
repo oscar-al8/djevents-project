@@ -18,7 +18,7 @@ export default function EventPage({evt}) {
                 <ToastContainer />
                 {evt.image && (
                     <div className={styles.image}>
-                        <Image src={evt.image.formats.large.url} width={960} height={600} />
+                        <Image src={evt.image.formats.large.url} width={960} height={600} alt='image' />
                     </div>
                 )}
                 <h3>Performers:</h3>
@@ -35,6 +35,7 @@ export default function EventPage({evt}) {
     )
 }
 
+/*
 export async function getStaticPaths(){
 
     const res = await fetch(`${API_URL}/events`);
@@ -61,11 +62,11 @@ export async function getStaticProps({ params: {slug} }){
         revalidate: 1
     }
 }
+*/
 
-/*
 export async function getServerSideProps({ query: {slug} }){
 
-    const res = await fetch(`${API_URL}/api/events/${slug}`);
+    const res = await fetch(`${API_URL}/events?slug=${slug}`);
     const events = await res.json();
 
     return{
@@ -74,4 +75,3 @@ export async function getServerSideProps({ query: {slug} }){
         },
     }
 }
-*/

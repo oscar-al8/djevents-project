@@ -7,7 +7,7 @@ import Link from 'next/Link';
 import Layout from '@/components/Layout';
 import styles from '@/styles/AuthForm.module.css';
 
-export default function registerPage() {
+export default function RegisterPage() {
 
     const [ username, setUsername ] = useState('');
     const [ email, setEmail ] = useState('');

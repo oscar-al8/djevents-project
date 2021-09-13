@@ -151,7 +151,7 @@ export default function EditEventPage({ evt, token }) {
             </form>
             <h2>Event Image</h2>
             {imagePrev ? (
-                <Image src={imagePrev} height={100} width={170} />
+                <Image src={imagePrev} height={100} width={170} alt='image' />
             ) : (
                 <div>
                     <p>No image uploaded</p>

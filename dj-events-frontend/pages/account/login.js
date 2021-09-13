@@ -7,7 +7,7 @@ import Link from 'next/Link';
 import Layout from '@/components/Layout';
 import styles from '@/styles/AuthForm.module.css';
 
-export default function loginPage() {
+export default function LoginPage() {
 
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
@@ -49,7 +49,7 @@ export default function loginPage() {
                     </div>
                     <input type="submit" value='Login' className='btn' />
                 </form>
-                <p>Dont't have an account? <Link href='/account/register'>Register</Link></p>
+                <p>Dont&apos;t have an account? <Link href='/account/register'>Register</Link></p>
             </div>
         </Layout>
     )

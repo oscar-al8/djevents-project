@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import AuthContext from '@/context/AuthContext';
 import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Search from './Search';
 import styles from '@/styles/Header.module.css';
 

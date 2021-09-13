@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import { PER_PAGE }  from '@/config/index';
 
 export default function Pagination({ page, total }) {
